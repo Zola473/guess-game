@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Guess Game</h2>
+      <p class="subtitle">
+        Guess a number between <strong>1 - 20</strong>, you have <strong>5 chances</strong>.
+      </p>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="guess-value"
+          name="guess-value"
+          placeholder="1 - 20"
+          autocomplete="off"
+        />
+        <div class="button-group">
+          <button id="guess-btn" type="button">Guess!</button>
+          <button id="restart-btn" type="button">Restart</button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="attempt-text">
+        Attempt <span id="attempt">0</span>/5
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="guess-game.js"></script>
+  </body>
+</html>
