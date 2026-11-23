@@ -45,7 +45,7 @@ function handleGuess() {
 
   if (userGuess === targetNumber) {
     gameOver = true;
-    resultDisplay.textContent = `🎉 Congratulations! You WIN! You guessed the number ${targetNumber} in ${attempts} attempt(s)!`;
+    resultDisplay.textContent = `🎉 Congratulations! You WIN!! You guessed the number ${targetNumber} correctly in ${attempts} attempt(s)!`;
     resultDisplay.className = "result-win";
     guessBtn.disabled = true;
     guessInput.disabled = true;
